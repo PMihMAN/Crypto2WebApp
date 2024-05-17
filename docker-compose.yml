@@ -1,0 +1,6 @@
+﻿services:
+  crypto2webapp:
+    image: crypto2webapp
+    build:
+      context: .
+      dockerfile: Crypto2WebApp/Dockerfile

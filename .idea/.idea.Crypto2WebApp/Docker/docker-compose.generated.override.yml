@@ -1,0 +1,22 @@
+# This is a generated file. Not intended for manual editing.
+services:
+  crypto2webapp:
+    build:
+      context: "C:\\Users\\p-mih\\RiderProjects\\Crypto2WebApp"
+      dockerfile: "Crypto2WebApp/Dockerfile"
+      target: "base"
+    command: []
+    entrypoint:
+    - "dotnet"
+    - "/app/bin/Debug/net8.0/Crypto2WebApp.dll"
+    environment:
+      ASPNETCORE_ENVIRONMENT: "Development"
+      ASPNETCORE_STATICWEBASSETS: "/app/bin/Debug/net8.0/Crypto2WebApp.staticwebassets.runtime.CT.json"
+      DOTNET_USE_POLLING_FILE_WATCHER: "true"
+    image: "crypto2webapp:dev"
+    ports: []
+    volumes:
+    - "C:\\Users\\p-mih\\.nuget\\packages:/home/app/.nuget/packages"
+    - "C:\\Users\\p-mih\\RiderProjects\\Crypto2WebApp\\Crypto2WebApp:/app:rw"
+    - "C:\\Users\\p-mih\\RiderProjects\\Crypto2WebApp:/src:rw"
+    working_dir: "/app"
